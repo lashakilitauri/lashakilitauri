@@ -31,15 +31,28 @@ body {
 }
 
 .swiper {
-  width: 80%;
-  margin-top: 50px;
-  height: 500px;
+  width: 100%;
+  padding: 50px;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .swiper img {
   border-radius: 5px;
   height: 100%;
   width: 100%;
+}
+
+.swiper-slide {
+  width: 30%;
+  height: 300px;
 }
 
 .videos {
@@ -49,5 +62,31 @@ body {
   align-items: center;
   padding: 50px;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 35px;
+}
+
+.video {
+  width: 45%;
+  height: 550px;
+}
+
+h4 {
+  margin-bottom: 20px;
+  height: 35px;
+}
+
+@media only screen and (max-width: 900px) {
+  .swiper-slide {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .content {
+    padding: 10px;
+  }
+
+  .video {
+    width: 100%;
+  }
 }
